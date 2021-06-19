@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>login</h1>
+    <% if (messages.error){ %>
+<%= messages.error %>
+<% }%>
+    <form id="signup" class="input-group" method="post" action="/login">
+
+      <div>
+        <input type="text" class="input-field" placeholder="Email-id" required name="email">
+      </div>
+      <div>
+        <input type="password" class="input-field" placeholder="Password" required name="password">
+      </div>
+      <div>
+      <button type="submit">login</button>
+      </div>
+        </form>
+        <a href="/registration">registration</a>
+</body>
+</html>
